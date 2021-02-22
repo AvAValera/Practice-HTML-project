@@ -151,7 +151,7 @@ nav .menu .menu_item {
   padding: 71px 0 65px 0;
 }
 
-.work_content .work_btn {
+.block_btn {
   display: block;
   margin: 0 auto;
   width: 112px;
@@ -163,9 +163,9 @@ nav .menu .menu_item {
   color: #ffffff;
 }
 
-.work_content .work_title {
+.block_title {
+  margin: 38px 0 40px 0;
   text-align: center;
-  margin-top: 38px;
   font-size: 38px;
   line-height: 48px;
   font-weight: 700;
@@ -210,4 +210,90 @@ nav .menu .menu_item {
   font-weight: 300;
   color: #202020;
   line-height: 21px;
+}
+
+.mob_app {
+  background: url("../img/mob_app_bg.png") repeat;
+  padding: 47px 0 60px 0;
+}
+
+.mob_app_btn {
+  display: block;
+  margin: 0 auto;
+  width: 112px;
+  height: 24px;
+  background-color: #000000;
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.mob_app_title {
+  text-align: center;
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 38px auto 0;
+}
+
+.mob_app_container {
+  margin-top: 32px;
+}
+
+.mob_app_sub_title {
+  font-size: 17px;
+  font-weight: 400;
+  color: #222222;
+  text-align: center;
+}
+
+.mob_app_content {
+  position: relative;
+  margin-bottom: 19px;
+}
+
+.mob_app_img {
+  display: block;
+  margin: 0 auto;
+}
+
+.mob_app_content_text {
+  position: absolute;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  top: 91px;
+  padding: 0 27px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mob_app_content_icon {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  bottom: 35px;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.mob_app_content_icon img {
+  display: block;
+  margin: 6px auto;
 }
