@@ -262,3 +262,51 @@ nav{
         }
     }
 }
+.choise{
+    position: relative;
+    &_first_block{
+        min-height: 499px;
+        padding-top: 57px;
+        background-color: #070716;
+        .first_block_btn{
+            @include block_button;
+            background-color: #ffffff;
+            color: #070716;
+        }
+        .first_block_title{
+            margin-top: 32px;
+            @include block_title;
+            color: #ffffff;
+        }
+        .first_block_subtitle{
+            font-size: 17px;
+            font-weight: 400;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
+    &_second_block{
+        min-height: 397px;
+        
+        background: url('../img/mob_app_bg.png')  repeat;
+        .second_block_subtitle{
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #222222;
+            text-align: center;
+            padding: 217px 0 138px 0;
+        }
+    }
+    &_img{
+        max-width: 100%;
+        position: absolute;
+        top: 232px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+    }
+}

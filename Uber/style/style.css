@@ -297,3 +297,71 @@ nav .menu .menu_item {
   display: block;
   margin: 6px auto;
 }
+
+.choise {
+  position: relative;
+}
+
+.choise_first_block {
+  min-height: 499px;
+  padding-top: 57px;
+  background-color: #070716;
+}
+
+.choise_first_block .first_block_btn {
+  display: block;
+  margin: 0 auto;
+  width: 112px;
+  height: 24px;
+  background-color: #000000;
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ffffff;
+  color: #070716;
+}
+
+.choise_first_block .first_block_title {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  color: #ffffff;
+}
+
+.choise_first_block .first_block_subtitle {
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.choise_second_block {
+  min-height: 397px;
+  background: url("../img/mob_app_bg.png") repeat;
+}
+
+.choise_second_block .second_block_subtitle {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #222222;
+  text-align: center;
+  padding: 217px 0 138px 0;
+}
+
+.choise_img {
+  max-width: 100%;
+  position: absolute;
+  top: 232px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
