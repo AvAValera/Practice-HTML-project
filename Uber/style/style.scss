@@ -310,3 +310,42 @@ nav{
         -o-transform: translate(-50%);
     }
 }
+.conditions{
+    padding: 68px 0 94px 0;
+    &_btn{
+        @include block_button;
+        
+    }
+    &_title{
+        @include block_title;
+        margin: 41px 0 33px 0;
+    }
+    &_column_title, &_column_subtitle{
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #1ca8c3;
+    }
+    
+    ul{
+        list-style: none;
+        padding: 22px 0 13px 50px;
+        li{
+            position: relative;
+            font-size: 17px;
+            font-weight: 300;
+            color: #222222;
+            padding-bottom: 4px;
+            &:before{
+                content: "";
+                position: absolute;
+                display: block;
+                width: 21px;
+                height: 20px;
+                left: -30px;
+                top: 5px;
+                background: url('../img/condition_icon.png');
+            }
+        }
+    }
+}
