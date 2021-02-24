@@ -311,7 +311,7 @@ nav{
     }
 }
 .conditions{
-    padding: 68px 0 94px 0;
+    padding: 68px 0 81px 0;
     &_btn{
         @include block_button;
         
@@ -320,6 +320,7 @@ nav{
         @include block_title;
         margin: 41px 0 33px 0;
     }
+    
     &_column_title, &_column_subtitle{
         font-size: 22px;
         line-height: 24px;
@@ -347,5 +348,117 @@ nav{
                 background: url('../img/condition_icon.png');
             }
         }
+    }
+    &_column_title_second{
+        margin-top: 62px;
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #ff5656;
+        
+    }
+    .second_list{
+        &:before{
+            background: url('../img/condition_icon_red.png');
+        }
+    }
+}
+.map{
+    background: url('../img/map.png') center center/ cover no-repeat;
+    height: 717px;
+    width: 100%;
+    padding: 49px 0;
+    &_btn{
+        @include block_button;
+        background-color: #ffffff;
+        color: #070716;
+    }
+    &_title{
+        @include block_title;
+        color: #ffffff;
+        margin-top: 32px;
+    }
+    &_subtitle{
+        font-size: 17px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 20px;
+    }
+    &_subtitle_second{
+        display: block;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #1fbad6;
+        text-align: center;
+        margin-top: 449px;
+    }
+}
+.footer_block{
+    position: relative;
+    width: 100%;
+    height: 156px;
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 23px;
+        &_social_icon{
+            margin-right: 9px;
+            text-decoration: none;
+            img{
+                width: 32px;
+            }
+        }
+        &_footer_menu{
+            text-align: center;
+            padding: 14px 0 31px 0;
+            .blue_line{
+                width: 299px;
+                height: 4px;
+                background-color: #1fbad6;
+                margin: 0 auto;
+            }
+            .block_menu{
+                padding-top: 32px;
+                &_first a{
+                    padding: 0 23px;
+                    font-size: 15px;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    color: #070716;
+                }
+                &_second a{
+                    padding: 0 10px;
+                    font-size: 11px;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    color: #999999;
+                }
+                &_last a{
+                    font-size: 11px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: #1fbad6;
+                }
+            }
+        }
+        &_app{
+            &_icon{
+                img{
+                    height: 27px;
+                }
+            }
+        }
+    }
+
+
+    &_line{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 8px;
+        background-color: black;
     }
 }

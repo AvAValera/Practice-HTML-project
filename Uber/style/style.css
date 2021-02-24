@@ -367,7 +367,7 @@ nav .menu .menu_item {
 }
 
 .conditions {
-  padding: 68px 0 94px 0;
+  padding: 68px 0 81px 0;
 }
 
 .conditions_btn {
@@ -421,4 +421,139 @@ nav .menu .menu_item {
   left: -30px;
   top: 5px;
   background: url("../img/condition_icon.png");
+}
+
+.conditions_column_title_second {
+  margin-top: 62px;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ff5656;
+}
+
+.conditions .second_list:before {
+  background: url("../img/condition_icon_red.png");
+}
+
+.map {
+  background: url("../img/map.png") center center/cover no-repeat;
+  height: 717px;
+  width: 100%;
+  padding: 49px 0;
+}
+
+.map_btn {
+  display: block;
+  margin: 0 auto;
+  width: 112px;
+  height: 24px;
+  background-color: #000000;
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ffffff;
+  color: #070716;
+}
+
+.map_title {
+  text-align: center;
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  color: #ffffff;
+  margin-top: 32px;
+}
+
+.map_subtitle {
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.map_subtitle_second {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1fbad6;
+  text-align: center;
+  margin-top: 449px;
+}
+
+.footer_block {
+  position: relative;
+  width: 100%;
+  height: 156px;
+}
+
+.footer_block .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 23px;
+}
+
+.footer_block .content_social_icon {
+  margin-right: 9px;
+  text-decoration: none;
+}
+
+.footer_block .content_social_icon img {
+  width: 32px;
+}
+
+.footer_block .content_footer_menu {
+  text-align: center;
+  padding: 14px 0 31px 0;
+}
+
+.footer_block .content_footer_menu .blue_line {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: 0 auto;
+}
+
+.footer_block .content_footer_menu .block_menu {
+  padding-top: 32px;
+}
+
+.footer_block .content_footer_menu .block_menu_first a {
+  padding: 0 23px;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #070716;
+}
+
+.footer_block .content_footer_menu .block_menu_second a {
+  padding: 0 10px;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.footer_block .content_footer_menu .block_menu_last a {
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1fbad6;
+}
+
+.footer_block .content_app_icon img {
+  height: 27px;
+}
+
+.footer_block_line {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8px;
+  background-color: black;
 }
