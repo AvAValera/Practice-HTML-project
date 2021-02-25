@@ -1,0 +1,41 @@
+@media (max-width: 1200px){
+    nav{
+        .menu{
+            &_link{
+                font-size: 13px;
+            }
+        }
+    }
+    .subheader{
+        &_phone{
+            font-size: 18px;
+        }
+    }
+    .promo{
+        &_header{
+            font-size: 52px;
+        }
+    }
+    .work_content{
+        .block_text{
+            width: 305px;
+        }
+    }
+    .mob_app{
+        &_content_text{
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 991px){
+    nav{
+        .menu{
+            &_link{
+                font-size: 10px;
+            }
+            &_item{
+                padding: 0 5px;
+            }
+        }
+    }
+}
