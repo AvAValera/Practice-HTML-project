@@ -69,4 +69,55 @@
             color: #ffffff;
         }
     }
+    &__icon{
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        padding-top: 66px;
+        .icon{
+            padding-left: 71px;
+            
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 21px;
+        }
+        span{
+            font-size: 14px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+    }
+    &__consultation{
+        padding-top: 49px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        button{
+            width: 300px;
+            height: 50px;
+            background-color: $red-color;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        span{
+            display: block;
+            padding-top: 18px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+        a{
+            text-decoration: underline;
+            color: #ffffff;
+        }
+    }
 }
