@@ -1,7 +1,7 @@
 .advantages{
     min-height: 470px;
     background-color: #f6f6f6;
-    padding: 70px 0 78px 0;
+    padding: 68px 0 78px 0;
     &__content{
         max-width: 950px;
         margin: 0 auto;
@@ -14,7 +14,29 @@
     }
     &__column{
         display: flex;
-        padding-top: 65px;
+        justify-content:space-between;
+        padding-top: 57px;
         text-align: center;
+        .column{
+            width: 265px;
+        }
+        .subtitle{
+            padding-top: 38px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #0d0d0d;
+        }
+        span{
+            display: block;
+            padding-top: 23px;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #0d0d0d;
+            a{
+                text-decoration: underline;
+                color: #ff0000;
+            }
+        }
     }
 }

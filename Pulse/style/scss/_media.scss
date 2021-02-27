@@ -1,0 +1,102 @@
+@media (max-width: 1000px){
+    .promo{
+        padding: 0 30px;
+    }
+}
+@media (max-width: 768px){
+    .main{
+        background: url('../../img/header_bg.png') -300px (center/cover) no-repeat;
+    }
+    .header{
+        flex-wrap: wrap;
+        &__logo{
+            padding-right: 10px;
+        }
+        &__contact{
+            padding-left: 15px;
+            a{
+                font-size: 15px;
+                
+            }
+        }
+    }
+    .promo{
+        &__title{
+            h1{
+                font-size: 35px;
+            }
+            h3{
+                font-size: 20px;
+            }
+        }
+    }
+    .advantages{
+        &__column{
+            flex-direction: column;
+            align-items:center;
+            padding-top: 0px;
+            .column{
+                padding-top: 25px;
+                width: 90%;
+            }
+            .subtitle{
+                padding-top: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 672px){
+    .header{
+        justify-content:space-around;
+        &__contact{
+            padding-top: 30px;
+            align-items: center;
+        }
+    }
+    .promo{
+        &__title{
+            padding-top: 45px;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 507px){
+    
+    .header{
+        justify-content:space-around;
+        &__contact{
+            padding-top: 30px;
+            align-items: center;
+            
+        }
+        &__title{
+            padding-top: 30px;
+        }
+    }
+    .promo{
+        &__icon{
+            justify-content: space-around;
+            .icon{
+                padding-left: 0;
+            }
+        }
+        &__consultation{
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 320px){
+    .main{
+        background: url('../../img/header_bg.png') -500px (center/cover) no-repeat;
+    }
+    .promo{
+        &__title{
+            h1{
+                font-size: 25px;
+            }
+            h3{
+                font-size: 12px;
+            }
+        }
+    }
+}
