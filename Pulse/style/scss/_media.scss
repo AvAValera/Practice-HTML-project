@@ -2,6 +2,21 @@
     .promo{
         padding: 0 30px;
     }
+    .consultation{
+        &__content{
+            margin: 0 20px;
+        }
+        &__title{
+            h3{
+                font-size: 30px;
+            }
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 550px;
+        }
+    }
 }
 @media (max-width: 768px){
     .main{
@@ -44,6 +59,11 @@
             }
         }
     }
+    .carousel {
+        &__inner {
+            width: 350px;
+        }
+    }
 }
 @media (max-width: 672px){
     .header{
@@ -57,6 +77,14 @@
         &__title{
             padding-top: 45px;
             text-align: center;
+        }
+    }
+    .consultation{
+        
+        &__title{
+            h3{
+                font-size: 21px;
+            }
         }
     }
 }
@@ -84,6 +112,29 @@
             align-items: center;
         }
     }
+    .consultation{
+        &__content{
+            margin: 0 5px;
+        }
+        &__title{
+            text-align: center;
+            h3{
+                font-size: 21px;
+            }
+        }
+        &__form{
+            display: flex;
+            justify-content: center;
+            input, button{
+                width: 250px;
+            }
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 200px;
+        }
+    }
 }
 @media (max-width: 320px){
     .main{
@@ -97,6 +148,11 @@
             h3{
                 font-size: 12px;
             }
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 150px;
         }
     }
 }
