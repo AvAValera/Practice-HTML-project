@@ -8,20 +8,25 @@
   display: flex;
   justify-content: space-between;
 }
+
 .header__logo {
   min-width: 251px;
 }
+
 .header__logo img {
   width: 100%;
 }
+
 .header__title {
   text-align: center;
 }
+
 .header__title span:first-child {
   font-size: 12px;
   font-weight: 500;
   color: #ffffff;
 }
+
 .header__title span:last-child {
   display: block;
   font-size: 18px;
@@ -29,17 +34,20 @@
   color: #ffffff;
   padding-top: 5px;
 }
+
 .header__contact {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+
 .header__contact a {
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
 }
+
 .header__contact .button {
   margin-top: 8px;
   display: block;
@@ -58,47 +66,56 @@
   max-width: 950px;
   margin: 0 auto;
 }
+
 .promo__title {
   padding-top: 91px;
   text-align: right;
 }
+
 .promo__title h1 {
   font-size: 42px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .promo__title h3 {
   font-size: 24px;
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .promo__icon {
   display: flex;
   justify-content: flex-end;
   text-align: center;
   padding-top: 66px;
 }
+
 .promo__icon .icon {
   padding-left: 71px;
 }
+
 .promo__icon img {
   display: block;
   margin: 0 auto;
   padding-bottom: 21px;
 }
+
 .promo__icon span {
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
 }
+
 .promo__consultation {
   padding-top: 49px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+
 .promo__consultation button {
   width: 300px;
   height: 50px;
@@ -114,6 +131,7 @@
   color: #ffffff;
   border: none;
 }
+
 .promo__consultation span {
   display: block;
   padding-top: 18px;
@@ -121,6 +139,7 @@
   font-weight: 500;
   color: #ffffff;
 }
+
 .promo__consultation a {
   text-decoration: underline;
   color: #ffffff;
@@ -131,31 +150,37 @@
   background-color: #f6f6f6;
   padding: 68px 0 78px 0;
 }
+
 .advantages__content {
   max-width: 950px;
   margin: 0 auto;
 }
+
 .advantages__title {
   font-size: 30px;
   font-weight: 700;
   color: #0d0d0d;
   text-align: center;
 }
+
 .advantages__column {
   display: flex;
   justify-content: space-between;
   padding-top: 57px;
   text-align: center;
 }
+
 .advantages__column .column {
   width: 265px;
 }
+
 .advantages__column .subtitle {
   padding-top: 38px;
   font-size: 18px;
   font-weight: 700;
   color: #0d0d0d;
 }
+
 .advantages__column span {
   display: block;
   padding-top: 23px;
@@ -164,6 +189,7 @@
   font-weight: 300;
   color: #0d0d0d;
 }
+
 .advantages__column span a {
   text-decoration: underline;
   color: #ff0000;
@@ -174,13 +200,16 @@
   background: url("../../img/bg_consultation.jpg") center center/cover no-repeat;
   padding: 100px 0 92px 0;
 }
+
 .consultation__content {
   max-width: 950px;
   margin: 0 auto;
 }
+
 .consultation__title {
   text-align: left;
 }
+
 .consultation__title h3 {
   font-size: 36px;
   line-height: 1.2;
@@ -188,6 +217,7 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .consultation__title h4 {
   padding-top: 70px;
   font-size: 20px;
@@ -195,14 +225,17 @@
   font-weight: 500;
   color: #ffffff;
 }
+
 .consultation__form {
   padding-top: 36px;
   min-width: 300px;
 }
+
 .consultation__form .form-block {
   display: flex;
   flex-direction: column;
 }
+
 .consultation__form input {
   width: 300px;
   height: 50px;
@@ -216,6 +249,7 @@
   color: #4b4b4b;
   padding-left: 20px;
 }
+
 .consultation__form button {
   width: 300px;
   height: 55px;
@@ -231,14 +265,17 @@
 .carousel {
   padding: 81px 0;
 }
+
 .carousel__inner {
   position: relative;
   width: 750px;
   margin: 0 auto;
 }
+
 .carousel__inner img {
   width: 100%;
 }
+
 .carousel .slick-prev {
   position: absolute;
   top: 50%;
@@ -247,10 +284,12 @@
   border: none;
   background: white;
 }
+
 .carousel .slick-prev img {
   width: 31px;
   height: 50px;
 }
+
 .carousel .slick-next {
   position: absolute;
   top: 50%;
@@ -259,6 +298,7 @@
   border: none;
   background: white;
 }
+
 .carousel .slick-next img {
   width: 31px;
   height: 50px;
@@ -272,12 +312,21 @@
   text-transform: uppercase;
   color: #0d0d0d;
 }
+
 .catalog__menu {
   padding-top: 69px;
   display: flex;
   justify-content: center;
 }
+
+.catalog__menu .btn__active {
+  border: none;
+  background-color: #c70101;
+  color: #ffffff;
+}
+
 .catalog__menu button {
+  position: relative;
   border: 2px solid #d0d0d0;
   background: white;
   width: 220px;
@@ -289,15 +338,25 @@
   font-weight: 500;
   text-transform: uppercase;
   color: #6b6b6b;
+  z-index: 5;
 }
-.catalog__menu button div {
-  transform: skewX(25deg);
-}
-.catalog__menu button:first-child {
+
+.catalog__menu button:hover {
+  box-shadow: 0px 0px 20px 5px red;
   border: none;
-  background-color: #c70101;
-  color: #ffffff;
 }
+
+.catalog__menu button div {
+  position: relative;
+  margin: 0 10px;
+  transform: skewX(25deg);
+  -webkit-transform: skewX(25deg);
+  -moz-transform: skewX(25deg);
+  -ms-transform: skewX(25deg);
+  -o-transform: skewX(25deg);
+  z-index: 0;
+}
+
 .catalog__block {
   padding-top: 59px;
 }
@@ -313,23 +372,21 @@
   .promo {
     padding: 0 30px;
   }
-
   .consultation__content {
     margin: 0 20px;
   }
   .consultation__title h3 {
     font-size: 30px;
   }
-
   .carousel__inner {
     width: 550px;
   }
 }
+
 @media (max-width: 768px) {
   .main {
     background: url("../../img/header_bg.png") -300px center/cover no-repeat;
   }
-
   .header {
     flex-wrap: wrap;
   }
@@ -342,14 +399,12 @@
   .header__contact a {
     font-size: 15px;
   }
-
   .promo__title h1 {
     font-size: 35px;
   }
   .promo__title h3 {
     font-size: 20px;
   }
-
   .advantages__column {
     flex-direction: column;
     align-items: center;
@@ -362,11 +417,11 @@
   .advantages__column .subtitle {
     padding-top: 10px;
   }
-
   .carousel__inner {
     width: 350px;
   }
 }
+
 @media (max-width: 672px) {
   .header {
     justify-content: space-around;
@@ -375,16 +430,15 @@
     padding-top: 30px;
     align-items: center;
   }
-
   .promo__title {
     padding-top: 45px;
     text-align: center;
   }
-
   .consultation__title h3 {
     font-size: 21px;
   }
 }
+
 @media (max-width: 507px) {
   .header {
     justify-content: space-around;
@@ -396,7 +450,6 @@
   .header__title {
     padding-top: 30px;
   }
-
   .promo__icon {
     justify-content: space-around;
   }
@@ -406,7 +459,6 @@
   .promo__consultation {
     align-items: center;
   }
-
   .consultation__content {
     margin: 0 5px;
   }
@@ -423,23 +475,21 @@
   .consultation__form input, .consultation__form button {
     width: 250px;
   }
-
   .carousel__inner {
     width: 200px;
   }
 }
+
 @media (max-width: 320px) {
   .main {
     background: url("../../img/header_bg.png") -500px center/cover no-repeat;
   }
-
   .promo__title h1 {
     font-size: 25px;
   }
   .promo__title h3 {
     font-size: 12px;
   }
-
   .carousel__inner {
     width: 150px;
   }

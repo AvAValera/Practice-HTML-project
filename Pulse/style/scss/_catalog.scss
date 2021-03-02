@@ -11,7 +11,13 @@
         padding-top: 69px;
         display: flex;
         justify-content: center;
+        .btn__active{
+            border: none;
+            background-color: $red-color;
+            color: #ffffff;
+        }
         button{
+            position: relative;
             border: 2px solid #d0d0d0 ;
             background: white;
             width: 220px;
@@ -23,13 +29,20 @@
             font-weight: 500;
             text-transform: uppercase;
             color: #6b6b6b;
-            div{
-                transform: skewX(25deg);
-            }
-            &:first-child{
+            z-index: 5;
+            &:hover{
+                box-shadow: 0px 0px 20px 5px red;
                 border: none;
-                background-color: $red-color;
-                color: #ffffff;
+            }
+            div{
+                position: relative;
+                margin: 0 10px;
+                transform: skewX(25deg);
+                -webkit-transform: skewX(25deg);
+                -moz-transform: skewX(25deg);
+                -ms-transform: skewX(25deg);
+                -o-transform: skewX(25deg);
+                z-index: 0;
             }
         }
     }

@@ -6,3 +6,23 @@ $(document).ready(function(){
 
     });
 });
+
+const blockMenu = document.querySelector(".catalog__menu")
+const btn = document.querySelectorAll(".catalog__menu button")
+
+blockMenu.addEventListener("click", (e) => {
+    btn.forEach((el) => {
+        el.classList.remove('btn__active')
+    })
+    
+    if(e.target.tagName == "DIV"){
+        e.target.parentNode.classList.add('btn__active');
+    }
+    else{
+        e.target.classList.add('btn__active');
+    }
+    console.log('click');
+    
+    
+    
+})
