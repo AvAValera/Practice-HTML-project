@@ -21,6 +21,7 @@ blockMenu.addEventListener("click", (e) => {
     else{
         e.target.classList.add('btn__active');
     }
+    
 });
 
 const btnMore = document.querySelectorAll(".content-item__more");
@@ -29,7 +30,6 @@ const btnBack = document.querySelectorAll(".content-list__back");
 btnMore.forEach((el) => {
     el.addEventListener("click", (e) => {
         e.path[2].classList.add('active_more')
-        console.log(e);
         
     })
 })
@@ -38,3 +38,6 @@ btnBack.forEach((el) => {
         e.path[2].classList.remove('active_more')
     })
 })
+
+const blockCatalog = document.querySelectorAll(".catalog__block")
+
