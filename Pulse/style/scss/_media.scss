@@ -17,6 +17,15 @@
             width: 550px;
         }
     }
+    .reviews{
+        
+        &__block{
+            padding: 0 20px;
+        }
+        &__line{
+            margin: 48px 40px;
+        }
+    }
 }
 @media (max-width: 768px){
     .main{
@@ -43,6 +52,12 @@
             h3{
                 font-size: 20px;
             }
+        }
+    }
+    .catalog{
+        &__menu{
+            padding: 0 20px;
+            
         }
     }
     .advantages{
@@ -85,6 +100,36 @@
             h3{
                 font-size: 21px;
             }
+        }
+    }
+    .catalog{
+        &__title{
+            margin-bottom: 20px;
+        }
+        &__menu{
+            padding: 0px;
+            margin: 0 auto;
+            width: 90%;
+            button{
+                font-size: 13px;
+            }
+        }
+    }
+    .reviews{
+        
+        &__block{
+            padding: 0 20px;
+        }
+        &__photo{
+            padding-right: 25px;
+            img{
+                display: block;
+                width: 100px;
+
+            }
+        }
+        &__line{
+            margin: 30px 40px;
         }
     }
 }
@@ -135,6 +180,37 @@
             width: 200px;
         }
     }
+    .catalog{
+        &__title{
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+        &__menu{
+            
+            button{
+                font-size: 10px;
+                margin: 0 5px;
+            }
+        }
+    }
+    .reviews{
+        &__body{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__photo{
+            margin-bottom: 20px;
+        }
+        &__data{
+            text-align: center;
+        }
+    }
+    .footer{
+        &__info{
+            width: 80%;
+        }
+    }
 }
 @media (max-width: 320px){
     .main{
@@ -150,9 +226,25 @@
             }
         }
     }
+    .advantages{
+        &__title{
+            font-size: 20px;
+        }
+    }
+    .consultation{
+        &__title{
+            font-size: 20px;
+        }
+    }
     .carousel {
         &__inner {
             width: 150px;
+        }
+    }
+    .catalog{
+        &__title{
+            margin-bottom: 20px;
+            font-size: 20px;
         }
     }
 }

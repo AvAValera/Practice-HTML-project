@@ -1,7 +1,5 @@
 .reviews{
     padding: 103px 0 71px 0;
-    max-width: 950px;
-    margin: 0 auto;
     &__title{
         font-size: 30px;
         font-weight: 700;
@@ -10,14 +8,19 @@
         text-align: center;
         margin-bottom: 70px;
     }
+    &__block{
+        max-width: 950px;
+        margin: 0 auto;
+        
+    }
     &__body{
         display: flex;
         justify-content: center;
     }
     &__photo{
-        margin-right: 62px;
-        
+        padding-right: 62px;
     }
+    
     .name{
         font-size: 18px;
         font-weight: 700;
@@ -37,7 +40,7 @@
         color: #0d0d0d;
     }
     &__line{
-        width: 940px;
+        max-width: 940px;
         height: 1px;
         background-color: #f6f6f6;
         margin: 48px auto;
