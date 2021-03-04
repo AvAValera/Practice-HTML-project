@@ -211,6 +211,22 @@
             width: 80%;
         }
     }
+    .modal{
+        #form, #order{
+            width: 290px;
+            padding: 38px 10px 40px 10px;
+        }
+        &__close{
+            right: 0;
+            top: 5px;
+        }
+        input{
+            width: 270px;
+        }
+        button{
+            width: 270px;
+        }
+    }
 }
 @media (max-width: 320px){
     .main{
@@ -247,4 +263,5 @@
             font-size: 20px;
         }
     }
+    
 }

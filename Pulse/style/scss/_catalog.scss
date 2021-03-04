@@ -29,7 +29,6 @@
             font-weight: 500;
             text-transform: uppercase;
             color: #6b6b6b;
-            z-index: 5;
             &:hover{
                 box-shadow: 0px 0px 20px 5px red;
                 border: none;
@@ -42,7 +41,6 @@
                 -moz-transform: skewX(25deg);
                 -ms-transform: skewX(25deg);
                 -o-transform: skewX(25deg);
-                z-index: 0;
             }
         }
     }

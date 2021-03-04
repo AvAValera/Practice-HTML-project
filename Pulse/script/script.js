@@ -39,5 +39,44 @@ btnBack.forEach((el) => {
     })
 })
 
-const blockCatalog = document.querySelectorAll(".catalog__block")
+const btnConsultation = document.querySelectorAll('[data-modal="consultation"]');
+const modalBackground = document.querySelector(".modal__background")
+const modalConsultation = document.querySelector("#form")
+const modalOrder = document.querySelector("#order")
+const btnOrder = document.querySelectorAll("[data-modal='order']")
+
+btnConsultation.forEach((el) => {
+    el.addEventListener("click", () => {
+        modalBackground.style.display = "block";
+        modalConsultation.style.display = "block";
+        setTimeout(() =>{
+            modalConsultation.style.opacity = 1;
+        },10)
+    })
+})
+
+btnOrder.forEach((el, i) => {
+    el.addEventListener("click", (e) => {
+        const title = document.querySelectorAll('.content-item__title')
+        const modalSubtitle = document.querySelector(".modal__sub")
+        modalBackground.style.display = "block";
+        modalOrder.style.display = "block";
+        modalSubtitle.textContent = title[i].textContent
+        setTimeout(() => {
+            modalOrder.style.opacity = 1;
+        },10)
+    })
+})
+
+document.querySelectorAll('.modal__close').forEach((el) => {
+    el.addEventListener("click", () => {
+        setTimeout(() =>{
+            modalBackground.style.display = "none";
+            modalConsultation.style.display = "none";
+            modalOrder.style.display = "none";
+        },500)
+        modalConsultation.style.opacity = 0;
+        modalOrder.style.opacity = 0;;
+    })
+})
 
