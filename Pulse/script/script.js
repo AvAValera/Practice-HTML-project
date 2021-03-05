@@ -7,22 +7,26 @@ $(document).ready(function(){
     });
 });
 
-const blockMenu = document.querySelector(".catalog__menu")
-const btn = document.querySelectorAll(".catalog__menu button")
+const blockMenu = document.querySelector(".catalog__menu");
+const btn = document.querySelectorAll(".catalog__menu button");
+const block = document.querySelectorAll('.catalog__block');
 
-blockMenu.addEventListener("click", (e) => {
-    btn.forEach((el) => {
-        el.classList.remove('btn__active')
+btn.forEach((el, i) => {
+    el.addEventListener("click", () => {
+        hideBlock();
+        block[i].classList.remove("hidden-catalog-block")
     })
-    
-    if(e.target.tagName == "DIV"){
-        e.target.parentNode.classList.add('btn__active');
-    }
-    else{
-        e.target.classList.add('btn__active');
-    }
-    
-});
+})
+function hideBlock(){
+    block.forEach((el) => {
+        el.classList.add('hidden-catalog-block')
+    })
+}
+// function resetColor(){
+//     btn.forEach((el) =>{
+//         el.style.background = 'white'
+//     })
+// }
 
 const btnMore = document.querySelectorAll(".content-item__more");
 const btnBack = document.querySelectorAll(".content-list__back");
