@@ -14,7 +14,9 @@ const block = document.querySelectorAll('.catalog__block');
 btn.forEach((el, i) => {
     el.addEventListener("click", () => {
         hideBlock();
+        hideActiveBtn();
         block[i].classList.remove("hidden-catalog-block")
+        btn[i].classList.add('btn__active')
     })
 })
 function hideBlock(){
@@ -22,11 +24,12 @@ function hideBlock(){
         el.classList.add('hidden-catalog-block')
     })
 }
-// function resetColor(){
-//     btn.forEach((el) =>{
-//         el.style.background = 'white'
-//     })
-// }
+function hideActiveBtn(){
+    btn.forEach((el) => {
+        el.classList.remove('btn__active')
+    })
+}
+
 
 const btnMore = document.querySelectorAll(".content-item__more");
 const btnBack = document.querySelectorAll(".content-list__back");
