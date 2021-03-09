@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grid-block{
+    display: grid;
+    max-width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 240px));
+    grid-template-rows: repeat(2, 260px);
+    gap: 60px;
+}
+p{
+    margin-top: 15px;
+    display: block;
+    font-size: 14px;
+    line-height: 16,41px;
+    font-weight: bold;
+}
+img{
+    width: 100%;
+}
+.six-block{
+    grid-column: 2 / 4;
+}
