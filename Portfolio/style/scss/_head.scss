@@ -1,0 +1,41 @@
+.head{
+    background: url('../../img/main_bg.jpg') 50% / cover no-repeat;
+    height: 100vh;
+    &__container{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    &__title{
+        padding-top: 206px;
+        &-subtitle{
+            position: relative;
+            padding-left: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            z-index: 1;
+            @include before_circle;
+        }
+        &-maintitle{
+            width: 532px;
+            font-size: 48px;
+            line-height: 60px;
+            margin-bottom: 25px;
+        }
+    }
+    &__btn{
+        display: flex;
+        width: 248px;
+        justify-content: space-between;
+        align-items: center;
+        &_active{
+            @include main-btn;
+        }
+        &_second{
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            text-decoration: none;
+        }
+    }
+}

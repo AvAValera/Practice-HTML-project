@@ -1,0 +1,25 @@
+.social{
+    position:fixed;
+    left: -160px;
+    top: 50%;
+    display: flex;
+    align-items:center;
+    transform: rotate(-90deg);
+    z-index: 5;
+    &__text{
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__line{
+        margin: 0 15px;
+        width: 70px;
+        height: 2px;
+        background-color: black;
+    }
+    &__icon{
+        margin: 0 15px;
+        transform: rotate(90deg);
+    }
+}
