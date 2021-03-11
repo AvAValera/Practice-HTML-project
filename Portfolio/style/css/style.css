@@ -29,6 +29,7 @@
 }
 
 .head {
+  position: relative;
   background: url("../../img/main_bg.jpg") 50%/cover no-repeat;
   height: 100vh;
 }
@@ -94,6 +95,104 @@
   font-size: 14px;
   line-height: 21px;
   text-decoration: none;
+}
+
+.hamburger {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 36px;
+  height: 21px;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background: #151812;
+}
+
+.hamburger span.long {
+  width: 36px;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.menu__block {
+  position: absolute;
+  left: -345px;
+  width: 345px;
+  height: 100vh;
+  background: #FFA501;
+  transition: all .5s;
+}
+
+.menu .active {
+  left: 0;
+}
+
+.menu__close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.menu__container {
+  position: absolute;
+  top: 140px;
+  left: 40px;
+}
+
+.menu__item {
+  position: relative;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  list-style: none;
+  margin-bottom: 15px;
+  padding-left: 35px;
+}
+
+.menu__item:hover::before {
+  background: white;
+}
+
+.menu__item a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.menu__item::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000000;
+  border-radius: 100%;
+  left: 0;
+  top: 10px;
+  transition: all .5s;
+}
+
+.menu__social {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
 }
 
 * {

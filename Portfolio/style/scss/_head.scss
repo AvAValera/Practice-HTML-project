@@ -1,4 +1,5 @@
 .head{
+    position: relative;
     background: url('../../img/main_bg.jpg') 50% / cover no-repeat;
     height: 100vh;
     &__container{
@@ -37,5 +38,25 @@
             line-height: 21px;
             text-decoration: none;
         }
+    }
+}
+.hamburger{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 36px;
+    height: 21px;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    span{
+        width: 30px;
+        height: 3px;
+        background: #151812;
+    }
+    span.long{
+        width: 36px;
     }
 }
