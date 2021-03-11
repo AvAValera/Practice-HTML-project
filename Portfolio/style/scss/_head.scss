@@ -9,12 +9,6 @@
     &__title{
         padding-top: 206px;
         &-subtitle{
-            position: relative;
-            padding-left: 10px;
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 24px;
-            z-index: 1;
             @include before_circle;
         }
         &-maintitle{

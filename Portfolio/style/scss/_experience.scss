@@ -1,0 +1,84 @@
+.experience{
+    &__container{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    &__block{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 121px auto;
+    }
+    &__title{
+        grid-column: 1 / 3;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 5px;
+        &-subtitle{
+            @include in_circle;
+            margin-bottom: 4px;
+        }
+        &-title{
+            @include title_line-center;
+        }
+    }
+    &__history{
+        display: flex;
+        &-line{
+            position: relative;
+            padding-right: 35px;
+            .line-circle{
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+            }
+            .line-main{
+                position: absolute;
+                width: 1px;
+                height: 343px;
+                background: black;
+            }
+            .line-first{
+                position: absolute;
+                width: 35px;
+                height: 1px;
+                background: black;
+            }
+            .line-second{
+                position: absolute;
+                width: 35px;
+                height: 1px;
+                background: black;
+            }
+        }
+        &-content{
+            .content-title{
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 40px;
+                
+            }
+            .content-header{
+                display: flex;
+            }
+            .content-img{
+                @include icon_circle;
+            }
+            .content-name span{
+                &:first-child{
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 21px;
+                    display: block;
+                }
+                &:last-child{
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

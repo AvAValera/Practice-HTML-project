@@ -195,6 +195,267 @@
   justify-content: space-between;
 }
 
+.about__container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.about__block {
+  padding-right: 100px;
+  display: grid;
+  grid-template-columns: 400px repeat(2, 320px);
+  grid-template-rows: 243px 179px 178px;
+}
+
+.about__photo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
+
+.about__me {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  margin: 7px 0 0 70px;
+}
+
+.about__subtitle {
+  position: relative;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  z-index: 1;
+}
+
+.about__subtitle:before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: #FFA501;
+  border-radius: 100%;
+  z-index: -1;
+  left: 0;
+  top: -30%;
+}
+
+.about__title {
+  position: relative;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
+  margin-bottom: 24px;
+}
+
+.about__title:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #FFA501;
+  left: 0;
+  bottom: 0;
+}
+
+.about__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.about__skill {
+  display: flex;
+  align-items: flex-start;
+  width: 260px;
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+.about__skill:last-child {
+  margin-top: 0;
+}
+
+.about__skill-img {
+  position: relative;
+  display: block;
+  z-index: 1;
+  padding: 15px 0 0 15px;
+  margin-right: 10px;
+}
+
+.about__skill-img:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: #FFA501;
+  border-radius: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.about__skill-text {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.about__skill-text span {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 6px;
+}
+
+.experience__container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.experience__block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 121px auto;
+}
+
+.experience__title {
+  grid-column: 1 / 3;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.experience__title-subtitle {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.experience__title-subtitle:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: #FFA501;
+  border-radius: 100%;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.experience__title-title {
+  position: relative;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.experience__title-title:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #FFA501;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+}
+
+.experience__history {
+  display: flex;
+}
+
+.experience__history-line {
+  position: relative;
+  padding-right: 35px;
+}
+
+.experience__history-line .line-circle {
+  width: 15px;
+  height: 15px;
+  background: #FFA501;
+  border-radius: 100%;
+}
+
+.experience__history-line .line-main {
+  position: absolute;
+  width: 1px;
+  height: 343px;
+  background: black;
+}
+
+.experience__history-line .line-first {
+  position: absolute;
+  width: 35px;
+  height: 1px;
+  background: black;
+}
+
+.experience__history-line .line-second {
+  position: absolute;
+  width: 35px;
+  height: 1px;
+  background: black;
+}
+
+.experience__history-content .content-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.experience__history-content .content-header {
+  display: flex;
+}
+
+.experience__history-content .content-img {
+  position: relative;
+  display: block;
+  z-index: 1;
+  padding: 15px 0 0 15px;
+}
+
+.experience__history-content .content-img:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: #FFA501;
+  border-radius: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.experience__history-content .content-name span:first-child {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  display: block;
+}
+
+.experience__history-content .content-name span:last-child {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  display: block;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
