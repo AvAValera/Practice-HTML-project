@@ -322,6 +322,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 121px auto;
+  row-gap: 60px;
 }
 
 .experience__title {
@@ -376,6 +377,7 @@
 
 .experience__history {
   display: flex;
+  margin-left: 70px;
 }
 
 .experience__history-line {
@@ -383,53 +385,62 @@
   padding-right: 35px;
 }
 
-.experience__history-line .line-circle {
+.experience__history-line_circle {
+  position: absolute;
   width: 15px;
   height: 15px;
   background: #FFA501;
   border-radius: 100%;
+  top: 7px;
+  left: -7px;
+  z-index: 2;
 }
 
-.experience__history-line .line-main {
+.experience__history-line_main {
   position: absolute;
   width: 1px;
   height: 343px;
   background: black;
+  left: 0;
+  top: 7px;
 }
 
-.experience__history-line .line-first {
+.experience__history-line_first {
   position: absolute;
   width: 35px;
   height: 1px;
   background: black;
+  top: 88px;
 }
 
-.experience__history-line .line-second {
+.experience__history-line_second {
   position: absolute;
   width: 35px;
   height: 1px;
   background: black;
+  top: 251px;
 }
 
-.experience__history-content .content-title {
+.experience__content_title {
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 40px;
 }
 
-.experience__history-content .content-header {
+.experience__content_header {
   display: flex;
 }
 
-.experience__history-content .content-img {
+.experience__content_img {
   position: relative;
   display: block;
   z-index: 1;
   padding: 15px 0 0 15px;
+  margin-right: 20px;
 }
 
-.experience__history-content .content-img:before {
+.experience__content_img:before {
   display: block;
   position: absolute;
   content: "";
@@ -442,18 +453,26 @@
   top: 0;
 }
 
-.experience__history-content .content-name span:first-child {
+.experience__content_name span:first-child {
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
   display: block;
 }
 
-.experience__history-content .content-name span:last-child {
+.experience__content_name span:last-child {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   display: block;
+}
+
+.experience__content_text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 45px;
+  width: 375px;
 }
 
 * {
