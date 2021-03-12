@@ -17,5 +17,6 @@
     &__gallery{
         display: grid;
         grid-template: repeat(2, 280px) / repeat(4, 280px);
+        gap: 5px;
     }
 }
