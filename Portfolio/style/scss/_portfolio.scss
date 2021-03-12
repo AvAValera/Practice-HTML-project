@@ -1,0 +1,21 @@
+.portfolio{
+    &__container{
+        max-width: 1140px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    &__title{
+        text-align: center;
+        &-subtitle{
+            @include in_circle;
+        }
+        &-title{
+            @include title-line-center;
+            margin-bottom: 85px;
+        }
+    }
+    &__gallery{
+        display: grid;
+        grid-template: repeat(2, 280px) / repeat(4, 280px);
+    }
+}
