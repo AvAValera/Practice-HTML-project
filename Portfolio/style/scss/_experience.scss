@@ -1,13 +1,16 @@
 .experience{
+    margin-bottom: 120px;
     &__container{
         max-width: 1140px;
         margin: 0 auto;
     }
     &__block{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 425px);
         grid-template-rows: 121px auto;
         row-gap: 60px;
+        column-gap: 121px;
+        justify-content:center;
     }
     &__title{
         grid-column: 1 / 3;
@@ -24,7 +27,6 @@
     }
     &__history{
         display: flex;
-        margin-left: 70px;
         &-line{
             position: relative;
             padding-right: 35px;
@@ -97,6 +99,9 @@
             line-height: 18px;
             margin-bottom: 45px;
             width: 375px;
+            &:last-child{
+                margin-bottom: 0;
+            }
         }
     }
 }

@@ -1,0 +1,50 @@
+.skills{
+    &__container{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    &__title{
+        text-align: center;
+        &-subtitle{
+            @include in_circle;
+        }
+        &-title{
+            @include title-line-center;
+            margin-bottom: 60px;
+        }
+    }
+    &__language{
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        gap: 13px;
+        justify-content: center;
+        &-block{
+            border: 1px solid black;
+            padding: 30px 30px 25px 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        &-icon{
+            height: 65px;
+            position: relative;
+            margin-bottom: 20px;
+            img{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%)
+            }
+        }
+        &-subtitle{
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 15px;
+        }
+        &-text{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

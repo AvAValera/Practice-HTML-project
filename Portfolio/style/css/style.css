@@ -313,6 +313,10 @@
   margin-bottom: 6px;
 }
 
+.experience {
+  margin-bottom: 120px;
+}
+
 .experience__container {
   max-width: 1140px;
   margin: 0 auto;
@@ -320,9 +324,11 @@
 
 .experience__block {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 425px);
   grid-template-rows: 121px auto;
   row-gap: 60px;
+  column-gap: 121px;
+  justify-content: center;
 }
 
 .experience__title {
@@ -377,7 +383,6 @@
 
 .experience__history {
   display: flex;
-  margin-left: 70px;
 }
 
 .experience__history-line {
@@ -473,6 +478,102 @@
   line-height: 18px;
   margin-bottom: 45px;
   width: 375px;
+}
+
+.experience__content_text:last-child {
+  margin-bottom: 0;
+}
+
+.skills__container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.skills__title {
+  text-align: center;
+}
+
+.skills__title-subtitle {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.skills__title-subtitle:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: #FFA501;
+  border-radius: 100%;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skills__title-title {
+  position: relative;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
+  margin-bottom: 60px;
+}
+
+.skills__title-title:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #FFA501;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+}
+
+.skills__language {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  grid-template-rows: repeat(2, 270px);
+  gap: 13px;
+  justify-content: center;
+}
+
+.skills__language-block {
+  border: 1px solid black;
+  padding: 30px 30px 25px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__language-icon {
+  height: 65px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.skills__language-icon img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.skills__language-subtitle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+
+.skills__language-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 * {
