@@ -58,7 +58,7 @@
         <div class="menu__overlay"></div>
     </div>
 
-    <div class="head">
+    <section class="head">
         <div class="head__container">
             <div class="head__title">
                 <div class="head__title-subtitle">Меня зовут Александра Смит</div>
@@ -74,7 +74,7 @@
             <span class="long"></span>
             <span></span>
         </div>
-    </div>
+    </section>
 
     <section class="about">
         <div class="about__container">
@@ -336,6 +336,55 @@
             </div>
         </div>
     </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact__wrapper">
+                <div class="contact__block">
+                    <div class="contact__img">
+                        <img src="img/main_photo.jpg" alt="img">
+                    </div>
+                    <div class="contact__info">
+                        <div class="contact__title">
+                            <div class="contact__title-subtitle">Контакты</div>
+                            <div class="contact__title-title">Свяжитесь со мной</div>
+                        </div>
+                        <div class="contact__social">
+                            <div class="contact__social-text_first">Любым удобным для вас способом:</div>
+                            <div class="contact__social-icon">
+                                <div class="contact__social-icon-item"><a href="#"><img src="icons/social/Facebook-contact.svg" alt="social"></a></div>
+                                <div class="contact__social-icon-item"><a href="#"><img src="icons/social/Telegram-contact.svg" alt="social"></a></div>
+                                <div class="contact__social-icon-item"><a href="#"><img src="icons/social/Instagram-contact.svg" alt="social"></a></div>
+                            </div>
+                            <div class="contact__social-text_second">Или оставьте ваши данные и я сама вам напишу:</div>
+                        </div>
+                        <form class="contact__form">
+                            <div class="contact__form-name">
+                                <input type="text" name="name" id="name"></input>
+                                <label required for="name">Ваше имя</label>
+                            </div>
+                            <div class="contact__form-email">
+                                <input type="text" name="email" id="email"></input>
+                                <label required for="email">Ваша почта</label>
+                            </div>
+                            <div class="contact__form-message">
+                                <textarea type="text" name="message" value="email" id="message"></textarea>
+                                <label for="message">Ваше сообщение</label>
+                            </div>
+                            <div class="contact__form-submit">
+                                <button сlass="contact__form-btn">Отправить сообщение</button>
+                                <div class="contact__form-checker">
+                                    <input required type="checkbox">
+                                    <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="script/script.js"></script>
 </body>
 </html>

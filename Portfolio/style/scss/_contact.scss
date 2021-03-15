@@ -1,0 +1,130 @@
+.contact{
+    padding-bottom: 91px; 
+    .container{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    &__wrapper{
+        padding: 0 35px 0 52px
+    }
+    &__block{
+        display: grid;
+        grid-template-columns: 400px 585px;
+        grid-template-rows: 600px;
+        justify-content: space-between;
+        
+    }
+    &__info{
+        padding-top: 7px;
+    }
+    &__title{
+        &-subtitle{
+            @include before_circle;
+        }
+        &-title{
+            @include title-line;
+            
+        }
+    }
+    &__social{
+        &-text_first{
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            margin: 20px 0;
+            display: block;
+        }
+        &-text_second{
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            padding-bottom: 30px;
+        }
+        &-icon{
+            display: flex;
+            width: 135px;
+            justify-content: space-between;
+            padding-bottom: 20px;
+        }
+    }
+    &__form{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content: space-between;
+        column-gap: 25px;
+        row-gap: 27px;
+        label{
+            position: absolute;
+            top: -12px;
+            left: 12px;
+            padding: 0 8px;
+            display: block;
+            background: white;
+        }
+        input{
+            width: 280px;
+            height: 45px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        textarea{
+            resize: none;
+            width: 585px;
+            height: 190px;
+            padding-top: 10px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-name{
+            position: relative;
+            grid-row: 1;
+            grid-column: 1;
+        }
+        &-email{
+            position: relative;
+            grid-row: 1;
+            grid-column: 2;
+        }
+        &-message{
+            position: relative;
+            width: 585px;
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+            
+        }
+        &-submit{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: 100%;
+            justify-content: space-between;
+            grid-row: 3;
+            grid-column: 1/ 3;
+            button{
+                display: block;
+                @include main-btn;
+                border: none;
+                width: 219px;
+            }
+            input{
+                width: 11px;
+                height: 11px;
+            }
+            span{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                a{
+                    color: #2306D6;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+        &-checker{
+            align-self: center;
+        }
+    }
+}
